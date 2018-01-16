@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Football app</string>
+    <string name="teama">TeamA</string>
+    <string name="_0">0</string>
+    <string name="goal">+ goal</string>
+    <string name="goal2">- goal</string>
+    <string name="foul">+ foul</string>
+    <string name="foul2">- foul</string>
+    <string name="out">+ out</string>
+    <string name="out2">- out</string>
+    <string name="teamb">TeamB</string>
+    <string name="reset">Reset</string>
+    <string name="_00">0</string>
+    <string name="goal1">+ goal</string>
+    <string name="_01">0</string>
+    <string name="foul1">+ foul</string>
+    <string name="_02">0</string>
+    <string name="out1">+ out</string>
+    <string name="_03">0</string>
+    <string name="goal3">+ goal</string>
+    <string name="goal4">- goal</string>
+    <string name="_04">0</string>
+    <string name="foul3">+ foul</string>
+    <string name="foul4">- foul</string>
+    <string name="_05">0</string>
+    <string name="out3">+ out</string>
+    <string name="out4">- out</string>
 </resources>

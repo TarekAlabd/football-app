@@ -16,10 +16,23 @@ public class MainActivity extends AppCompatActivity {
     int goalTeamB = 0;
     int foulTeamB = 0;
     int outTeamB = 0;
+    TextView goalView1;
+    TextView foulView1;
+    TextView outView1;
+    TextView goalView2;
+    TextView foulView2;
+    TextView outView2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        goalView1 = (TextView) findViewById(R.id.change_goalsA);
+        foulView1 = (TextView) findViewById(R.id.change_foulsA);
+        outView1 = (TextView) findViewById(R.id.change_outsA);
+        goalView2 = (TextView) findViewById(R.id.change_goalsB);
+        foulView2 = (TextView) findViewById(R.id.change_foulsB);
+        outView2 = (TextView) findViewById(R.id.change_outsB);
     }
 
 
@@ -140,48 +153,45 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given goal for Team A.
      */
     public void displayGForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.change_goalsA);
-        scoreView.setText(String.valueOf(score));
+
+        goalView1.setText(String.valueOf(score));
     }
 
     /**
      * Displays the given foul for Team A.
      */
     public void displayFForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.change_foulsA);
-        scoreView.setText(String.valueOf(score));
+
+        foulView1.setText(String.valueOf(score));
     }
 
     /**
      * Displays the given out for Team A.
      */
     public void displayOForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.change_outsA);
-        scoreView.setText(String.valueOf(score));
+
+        outView1.setText(String.valueOf(score));
     }
 
     /**
      * Displays the given goal for Team B.
      */
     public void displayGForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.change_goalsB);
-        scoreView.setText(String.valueOf(score));
+        goalView2.setText(String.valueOf(score));
     }
 
     /**
      * Displays the given foul for Team B.
      */
     public void displayFForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.change_foulsB);
-        scoreView.setText(String.valueOf(score));
+        foulView2.setText(String.valueOf(score));
     }
 
     /**
      * Displays the given out for Team B.
      */
     public void displayOForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.change_outsB);
-        scoreView.setText(String.valueOf(score));
+        outView2.setText(String.valueOf(score));
     }
 
 
